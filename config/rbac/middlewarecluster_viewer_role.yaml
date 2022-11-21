@@ -1,0 +1,20 @@
+# permissions for end users to view middlewareclusters.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: middlewarecluster-viewer-role
+rules:
+- apiGroups:
+  - apps.devless.toplogy.com
+  resources:
+  - middlewareclusters
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - apps.devless.toplogy.com
+  resources:
+  - middlewareclusters/status
+  verbs:
+  - get

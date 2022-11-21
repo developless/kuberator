@@ -1,0 +1,16 @@
+domain: devless.toplogy.com
+layout:
+- go.kubebuilder.io/v3
+projectName: kuberator
+repo: github.com/kuberator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: devless.toplogy.com
+  group: apps
+  kind: MiddlewareCluster
+  path: github.com/kuberator/api/v1beta1
+  version: v1beta1
+version: "3"

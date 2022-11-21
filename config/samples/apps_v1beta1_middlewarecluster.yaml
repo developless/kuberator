@@ -1,0 +1,6 @@
+apiVersion: apps.devless.toplogy.com/v1beta1
+kind: MiddlewareCluster
+metadata:
+  name: middlewarecluster-sample
+spec:
+  # TODO(user): Add fields here
